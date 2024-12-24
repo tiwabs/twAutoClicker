@@ -205,7 +205,7 @@ void gui::EndRender() noexcept
 
 static void handleShortCut()
 {
-	if (!gui::waitingForKey) {  // Ne g�rer le raccourci que si nous ne sommes pas en attente d'une nouvelle touche
+	if (!gui::waitingForKey) {
 		if (GetAsyncKeyState(gui::startStopKey) & 0x8000)
 		{
 			if (!gui::keyWasDown)
@@ -236,7 +236,6 @@ static void hanleEditKeyBind()
 	{
 		if (GetAsyncKeyState(key) & 0x8000)
 		{
-			// Attendre que la touche soit rel�ch�e
 			while (GetAsyncKeyState(key) & 0x8000) {
 				Sleep(10);
 			}
