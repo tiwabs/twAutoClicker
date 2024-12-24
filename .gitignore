@@ -1,6 +1,6 @@
 .vscode
 .vs
-.json
+*.json
 
 Release
 Debug
